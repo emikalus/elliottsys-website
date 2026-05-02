@@ -60,6 +60,19 @@
       font-size: 1.05rem;
     }
 
+    .brand-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-logo img {
+      height: 42px;
+      width: auto;
+      display: block;
+      border-radius: 4px;
+    }
+
     .nav-links {
       display: flex;
       gap: 24px;
@@ -397,7 +410,10 @@
 <body>
   <header>
     <nav class="nav">
-      <div class="brand">ELLIOTT SYSTEMS LLC</div>
+      <a class="brand brand-logo" href="#">
+        <img src="images/elliott-systems-logo.png" alt="Elliott Systems LLC logo" />
+        <span>ELLIOTT SYSTEMS LLC</span>
+      </a>
       <div class="nav-links">
         <a href="#services">Services</a>
         <a href="#approach">Approach</a>
@@ -410,7 +426,7 @@
   <main>
     <section class="hero">
       <video class="hero-video" autoplay muted loop playsinline>
-        <source src="videos/Elliott-Systems-reel-web.mp4" type="video/mp4">
+        <source src="videos/elliott-systems-reel.mp4" type="video/mp4">
       </video>
       <div class="hero-overlay"></div>
       <div class="hero-inner">
